@@ -37,7 +37,7 @@ function playRound(humanChoice, computerChoice){
     computerShot.textContent = `Computer: ${computerChoice}`;
 
     if (humanChoice === computerChoice){
-        commentary.textContent = "Draw!";
+        commentary.textContent = "Draw";
         commentary.style.color = "black"
         }
     else if ((humanChoice === "rock" && computerChoice === "paper") || (humanChoice === "paper" && computerChoice === "scissors") || (humanChoice === "scissors" && computerChoice === "rock")){
@@ -62,7 +62,6 @@ function playRound(humanChoice, computerChoice){
         humanScoreBoard.textContent = humanScore;
         computerScoreBoard.textContent = computerScore;
         commentary.textContent += " for the 5th time!";
-        computerShot.textContent = "Play again!"
     }
 }
 
