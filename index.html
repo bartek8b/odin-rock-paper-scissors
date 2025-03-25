@@ -3,10 +3,24 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
     <title>Document</title>
 </head>
 <body>
-    <button onclick="playGame()">Play rock paper scissors!</button>
+    
+    <div id="body-container">
+        <div id="score-board">
+            YOU <span id="player-score">0</span> : <span id="computer-score">0</span> COM
+        </div>
+        <div id="buttons-container">
+            <button class="button" id="rock">rock<br>&#9994;</button>
+            <button class="button" id="paper">paper<br>&#9995;</button>
+            <button class="button" id="scissors">scissors<br>&#9996;</button>
+        </div>
+        <div id="commentary">Let's play rock paper scissors!</div>
+    </div>
+
+
     <script src="index.js"></script>
 </body>
-</html>
+</html

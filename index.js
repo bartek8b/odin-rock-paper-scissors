@@ -92,26 +92,26 @@ function playRound(humanChoice, computerChoice){
         roundCounter++; 
     }
 }
-
+//playGame(humanSelection)
 function playGame(){
     let humanSelection = getHumanChoice();
     let computerSelection = getComputerchoice();
     playRound(humanSelection, computerSelection); 
 
-    if (roundCounter <= 5){
-        playGame();      
-    }
-    else{
-        roundCounter = 1;
-        console.log(`-------- FINAL RESULT: ${humanScore} : ${computerScore} --------`);
-        if(humanScore > computerScore){
-            console.log("Congrats! You won!");
-        }
-        else if (humanScore < computerScore){
-            console.log("Try next time! This time computer won!");
-        } 
-        else{
-            console.log("It's draw");
-        }
-    }
+    // if (roundCounter <= 5){
+    //     playGame();      
+    // }
+    // else{
+    //     roundCounter = 1;
+    //     console.log(`-------- FINAL RESULT: ${humanScore} : ${computerScore} --------`);
+    //     if(humanScore > computerScore){
+    //         console.log("Congrats! You won!");
+    //     }
+    //     else if (humanScore < computerScore){
+    //         console.log("Try next time! This time computer won!");
+    //     } 
+    //     else{
+    //         console.log("It's draw");
+    //     }
+    // }
 }

@@ -1,0 +1,51 @@
+body{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Courier New', Courier, monospace;
+}
+#body-container{
+    height: 100vh;
+    width: 100vw;
+    background-color: lightgray;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 5rem;
+}
+#score-board{
+    color: black;
+    font-size: 3rem;
+}
+#player-score{
+    font-size: 4rem;
+    color: green;
+}
+#computer-score{
+    font-size: 4rem;
+    color: tomato;
+}
+#buttons-container{
+    display: flex;
+    gap: 5rem;
+}
+.button{
+    width: 150px;
+    aspect-ratio: 1 / 1;
+    font-size: 1.5rem;
+    cursor: pointer;
+    border: none;
+    border-radius: 50rem;
+    background-color: hsl(195, 53%, 70%);
+    &:hover{
+        background-color: hsl(195, 53%, 75%);
+    }
+    &:active{
+        background-color: hsl(195, 53%, 80%);
+        border: 2px solid green;
+    }
+}
+#commentary{
+    font-size: 1.5rem;
+}
