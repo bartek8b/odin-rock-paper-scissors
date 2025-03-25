@@ -46,6 +46,10 @@ body{
         border: 2px solid green;
     }
 }
+#computer-shot{
+    color: tomato;
+    font-size: 1.3rem;
+}
 #commentary{
     font-size: 1.5rem;
 }
