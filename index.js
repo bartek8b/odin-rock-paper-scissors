@@ -34,21 +34,36 @@ function playGame(humanSelection){
 }
 
 function playRound(humanChoice, computerChoice){
+    computerShot.textContent = `Computer: ${computerChoice}`;
+
     if (humanChoice === computerChoice){
         commentary.textContent = "Draw!";
+        commentary.style.color = "black"
         }
     else if ((humanChoice === "rock" && computerChoice === "paper") || (humanChoice === "paper" && computerChoice === "scissors") || (humanChoice === "scissors" && computerChoice === "rock")){
-        commentary.textContent = "You loose!";
-        computerScore ++;
+        commentary.textContent = "You loose";
+        commentary.style.color = "tomato"
+;       computerScore ++;
         computerScoreBoard.textContent = computerScore;
      }
     else if ((humanChoice === "rock" && computerChoice === "scissors") || (humanChoice === "paper" && computerChoice === "rock") || (humanChoice === "scissors" && computerChoice === "paper")){
-        commentary.textContent = "You win!";
+        commentary.textContent = "You win";
+        commentary.style.color = "green";
         humanScore ++;
         humanScoreBoard.textContent = humanScore;
     }
 
-    computerShot.textContent = `Computer: ${computerChoice}`
+    
+
+    if(humanScore === 5 || computerScore === 5){
+        humanScore = 0;
+        computerScore = 0;
+
+        humanScoreBoard.textContent = humanScore;
+        computerScoreBoard.textContent = computerScore;
+        commentary.textContent += " for the 5th time!";
+        computerShot.textContent = "Play again!"
+    }
 }
 
 
