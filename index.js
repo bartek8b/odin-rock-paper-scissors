@@ -56,12 +56,11 @@ function playRound(humanChoice, computerChoice){
     
 
     if(humanScore === 5 || computerScore === 5){
+        commentary.textContent += ` for the 5th time! Result: ${humanScore} : ${computerScore}`;
         humanScore = 0;
         computerScore = 0;
-
         humanScoreBoard.textContent = humanScore;
         computerScoreBoard.textContent = computerScore;
-        commentary.textContent += " for the 5th time!";
     }
 }
 
