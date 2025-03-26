@@ -2,6 +2,7 @@ body{
     box-sizing: border-box;
     margin: 0;
     padding: 0;
+    -webkit-tap-highlight-color: transparent;
     font-family: 'Courier New', Courier, monospace;
 }
 #body-container{
@@ -31,7 +32,8 @@ body{
     gap: 2rem;
 }
 .button{
-    width: 6rem;
+    font-family: Arial, Helvetica, sans-serif;
+    width: 7rem;
     aspect-ratio: 1 / 1;
     font-size: 1.5rem;
     cursor: pointer;
@@ -42,8 +44,7 @@ body{
         background-color: hsl(195, 53%, 75%);
     }
     &:active{
-        background-color: hsl(195, 53%, 80%);
-        border: 2px solid green;
+        background-color: green;
     }
 }
 #computer-shot{
